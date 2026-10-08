@@ -1,0 +1,20 @@
+table,th,tr,td{
+    border: 1px solid ;
+}
+.type-1 th{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.type-2{
+    border: 2px solid black;
+    margin: 3px;
+}
+.table-border{
+     border: 2px solid black;
+    width: 880px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
