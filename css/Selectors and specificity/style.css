@@ -1,0 +1,38 @@
+/* specificity hierarchy
+inline style> id selector>class/attribute/pseudo-class>element selector>universal selector */
+
+*{
+    color: cadetblue;
+}
+
+/* universal selector */
+
+.class{
+    background-color: lightcoral;
+}
+
+/* class selector */
+
+#ID{
+    background-color: aquamarine;
+}
+
+/* id selector */
+
+span , p{
+    background-color: rgb(73, 2, 80);
+}
+
+/* group selector */
+
+p {
+    font-style: italic;
+}
+
+/* element selector */
+ 
+.important{
+    background-color: deeppink !important;
+}
+
+/* apply particular css at the highest level */
