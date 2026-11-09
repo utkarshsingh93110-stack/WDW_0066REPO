@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: [one]100px [two]120px [three]140px 160px 180px;
+    grid-template-rows: 100px 120px 140px;
+    /* column-gap: 20px;
+    row-gap: 20px; */
+}
+.box{
+    border: 2px groove black;
+    width: 60px;
+    height: 60px;
+}
+.item3{
+grid-column: 1/6;
+grid-row: 1/4;
+}
+.item1{
+grid-column: 1/3;
+display: flex;
+justify-content: center;
+align-items: center;
+align-self:center;
+justify-self: flex-end;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item1">1</div>
+        <div class="box">2</div>
+        <div class="box item3">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 90vw;
+            height: 90vh;
+            padding: 10px;
+            display: grid;
+            grid-template-columns:1fr 3fr 1fr;
+    grid-template-rows: 100px 120px 140px;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-areas: "header header header"
+                " nav aside main"
+                "footer footer footer";
+        }
+
+        .item1 {
+            grid-area: header;
+            background-color: blue;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item2 {
+            grid-area: main;
+            background-color: bisque;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item3 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            grid-area: aside;
+            background-color: blueviolet;
+        }
+
+        .item4 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            grid-area: footer;
+            background-color: #9a39a7;
+
+        }
+
+        .item5 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: #f44a4a;
+            grid-area: nav;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 40px; */
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1 box">HAEDER</div>
+        <div class="item2 box">MAIN</div>
+        <div class="item3 box">ASIDE</div>
+        <div class="item4 box">FOOTER</div>
+        <div class="item5 box">NAV</div>
+
+    </div>
+</body>
+
+</html>
