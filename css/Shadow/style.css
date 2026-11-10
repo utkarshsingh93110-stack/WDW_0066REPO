@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid black;
+    height: 90vh;
+}
+.box{
+    border: 2px groove black;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px 5px #121212;
+}
+.text>h1{
+    text-shadow: 2px 2px 5px red;
+}
+.text>p{
+    text-shadow:0 0 10px rgb(191, 255, 0),0 0 20px rgb(0, 255, 213),0 0 30px rgb(22, 158, 200);
+}
