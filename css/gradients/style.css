@@ -1,0 +1,24 @@
+.linear{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    background-image: linear-gradient(47.36deg,red,pink,orange,maroon,gray);
+}
+.radial{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    background-image: repeating-radial-gradient(circle,pink 20px,red,blue,violet,maroon,yellow,gray,green,purple,black,white,silver);
+}
+.conic{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    background-image:conic-gradient(violet,indigo,blue,green,yellow,orange,red);
+}
+h1{
+    text-shadow: 5px 5px 5px skyblue;
+}
