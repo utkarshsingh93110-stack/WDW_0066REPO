@@ -1,0 +1,29 @@
+.container{
+border: 2px solid black;
+width: 200px;
+height: 200px;
+animation-name:movebox;
+animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+animation-direction: alternate-reverse;
+animation-duration: 3s;
+}
+@keyframes movebox {
+    0%{
+        transform: translateX(0px);
+        background-color: red;
+    }
+    33%{
+        transform: translateX(150px);
+        background: orange;
+    }
+    66%{
+        transform: translateX(300px);
+        background-color: brown;
+    }
+    99%{
+        transform: translateX(450px);
+        background-color: aquamarine;
+    }
+}
