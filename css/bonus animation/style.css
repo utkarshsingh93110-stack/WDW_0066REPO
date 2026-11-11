@@ -1,0 +1,84 @@
+.container {
+            width: 90vw;
+            height: 98vh;
+            background-color: rgb(167, 11, 251);
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .box {
+            border: 2px solid red;
+            width: 90px;
+            border-radius: 99px;
+            height: 90px;
+            background-color: red;
+            animation-name: utkaanimation;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 0.9s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction:normal;
+
+        }
+
+        @keyframes utkaanimation {
+            0% {
+                transform: translate(0px, 0px);
+                background-color: violet;
+            }
+
+
+            10% {
+                transform: translate(100px, -100px);
+                background-color: indigo;
+            }
+
+
+            20% {
+                transform: translate(200px, -150px);
+                background-color: blue;
+            }
+
+
+            30% {
+                transform: translate(300px, -150px);
+                background-color: green;
+            }
+
+
+            40% {
+                transform: translate(400px, -100px); background-color: yellow;
+            }
+
+
+            50% {
+                transform: translate(500px, 0px);
+                background-color: orange;
+            }
+
+            60%{
+                transform: translate(600px, -100px);
+                background-color: red;
+            }
+
+            70%{
+                transform: translate(700px, -150px);
+                background-color: pink;
+            }
+           
+            80%{
+                transform: translate(800px, -150px);
+                background-color: aquamarine;
+            }
+            90%{
+                transform: translate(900px, -100px);
+                background-color: chartreuse;
+            }
+
+            100%{
+                transform: translate(1000px, 0px);
+                background-color: darkmagenta;
+            }
+        }
+    
