@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.box{
+    animation-name: demo;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: infinite;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+@keyframes demo {
+    from{
+        background-image:radial-gradient(circle, red 20%, pink, green, blue);
+    }
+    to{
+        background-image:linear-gradient(56deg, violet,maroon,black,pink,gray);
+    }
+}
