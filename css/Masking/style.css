@@ -1,0 +1,5 @@
+img{
+    border: 2px solid black;
+    mask-image:   linear-gradient(to right, black, transparent); mask-origin: margin-box;
+    mask-size: cover;
+}
