@@ -1,0 +1,29 @@
+.container{
+    border: 2px solid black;
+    width: 90vw;
+    height: 100%;
+    padding: 20px;
+
+}
+.box{
+    border: 2px solid black;
+    height: 90px;
+    background-color: blueviolet;
+    transition: all 0.5s ease-in 4s;
+}
+.box:hover{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+.box1{
+      border: 2px solid black;
+       width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: all 2s ease-in 0.5s;
+}
+.box1:hover{
+    background-color: pink;
+    transform: translate(20px,20px) rotate(56deg);
+}
