@@ -1,0 +1,8 @@
+div,p{
+    background-color: lightblue;
+}
+span{
+    background-color: lightgreen;
+    margin-top:10px;
+    display: inline-block;
+}
