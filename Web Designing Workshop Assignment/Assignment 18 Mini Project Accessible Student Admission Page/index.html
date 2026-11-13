@@ -6,6 +6,51 @@
     <title>Assignment 18 Mini Project Accessible Student Admission Page</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>ABC College Admission 2026</h1>
+        </header>
+            <h3>Courses and Fees</h3>
+        <table>
+            <caption>Available Courses</caption>
+            <tr>
+                <th>Course</th>
+                <th>Seats</th>
+                <th>Fees</th>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>120</td>
+                <td>&#8377;90,000</td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>60</td>
+                <td>&#8377;45,000</td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Application Form</legend>
+            <label for="name">Name:</label>
+            <input type="text">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email">
+            <label for="course">Course:</label>
+            <select name="" id="course">
+                <option value="">B.Tech CSE </option>
+                <option value="">ECE</option>
+                <option value="">AIML</option>
+                <option value="">AIML DS</option>
+                <option value="">Civil</option>
+            </select>
+            <label for="feedback">Statement:</label>
+            <textarea rows="6" cols="50" name="" id="feedback"></textarea>
+            <button type="submit">Apply</button>
+        </fieldset>
+        <footer>
+<p align="center">&copy; 2026 ABC College</p>
+        </footer>
+    </div>
 </body>
 </html>
