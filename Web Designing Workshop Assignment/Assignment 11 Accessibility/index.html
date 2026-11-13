@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessible Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 20px 8%;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            display: block;
+            margin-bottom: 5px;
+            color: blue;
+        }
+
+        /* Navigation */
+        nav a {
+            color: blue;
+            display: inline;
+        }
+
+        /* Heading */
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        /* Image Section */
+        .image-section {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .image-placeholder {
+            width: 250px;
+            height: 20px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 8px;
+        }
+
+        /* Search Section */
+        .search-section {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input {
+            width: 240px;
+            height: 20px;
+        }
+
+        /* Focus Accessibility */
+        a:focus,
+        button:focus,
+        input:focus {
+            outline: 3px solid blue;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Skip Link -->
+        <a href="#main-content" class="skip-link">
+            Skip to main content
+        </a>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Help</a>
+        </nav>
+
+        <!-- Main Content -->
+        <section id="main-content">
+
+            <h1>Accessible Page</h1>
+
+            <!-- Image Section -->
+            <div class="image-section">
+
+                <div class="image-placeholder"
+                     role="img"
+                     aria-label="Image preview placeholder">
+                    🖼️
+                </div>
+
+                <button type="button"
+                        aria-label="Close image preview"
+                        onclick="closeImage()">
+                    X
+                </button>
+
+            </div>
+
+            <!-- Search Section -->
+            <div class="search-section">
+
+                <label for="search">Search:</label>
+
+                <input
+                    type="search"
+                    id="search"
+                    name="search"
+                    aria-label="Search the website">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function closeImage() {
+            document.querySelector(".image-section").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
