@@ -28,3 +28,4 @@ console.log(typeof a ,typeof b , typeof c ,typeof d ,typeof f, typeof o);
 console.log(o)
 o.salary = "500cr"
 console.log(o)
+
