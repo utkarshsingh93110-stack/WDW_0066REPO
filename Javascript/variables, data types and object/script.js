@@ -29,3 +29,7 @@ console.log(o)
 o.salary = "500cr"
 console.log(o)
 
+let str1 ="Utkarsh"
+let str2 = "Singh"
+let strFull = str1 + " " + str2
+console.log(strFull)
